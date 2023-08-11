@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/enterFragment">
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.template.lovecompatibilitykg.fragments.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/enterFragment"
+        android:name="com.template.lovecompatibilitykg.fragments.EnterFragment"
+        android:label="EnterFragment"
+        tools:layout="@layout/fragment_enter" />
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.template.lovecompatibilitykg.sharedPreferences.board.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" />
+    <activity
+        android:id="@+id/historyActivity"
+        android:name="com.template.lovecompatibilitykg.activity.HistoryActivity"
+        android:label="activity_history"
+        tools:layout="@layout/activity_history" />
+</navigation>
